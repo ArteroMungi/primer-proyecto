@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&display=swap');
+
 
 *{
     margin: 0;
@@ -13,22 +13,26 @@ body {
 /*-----------HEADER-------------*/
 
 header{
+    font-family:'Nunito Sans', sans-serif;
     background-color: #0a5c4a;
     display: flex;
     justify-content: space-between;
     height: 100px;
 }
 header nav {
+    font-family:'Nunito Sans', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 header nav ul{
+    font-family:'Nunito Sans', sans-serif;
     display: flex;
     justify-content: center;   
     list-style: none;  
 }
 header nav ul li{  
+    font-family:'Nunito Sans', sans-serif;
     text-align: center; 
     width: auto;
     margin: 15px;
@@ -36,6 +40,7 @@ header nav ul li{
 
 }
 header nav ul li a{
+    font-family:'Nunito Sans', sans-serif;
     font-size: 15px;
     font-weight: 200;
     text-decoration: none;
