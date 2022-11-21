@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>🍰UPI BAKERY</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -30,13 +34,50 @@
         </div>
     </header>
     <main>
-        <section class="hero">
-            <h1 class="animate__animated animate__flipInX">PASTELERIA ARTESANAL PLANT BASED</h1>
-            <h2>PRODUCTOS 100% VEGANOS</h2>
-            <h2>SIN AZUCARES AÑADIDOS</h2>
-            <h2>SIN HARINAS REFINADAS</h2>
-            <h2>SIN CONSERVANTES</h2>
-            <a href="./pages/productos.html">CONOCENOS</a>
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/todascuadradooo.jpg" class="d-block w-100 h-10" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Productos 100% veganos</h5>
+                            <p>Todos nuestros ingredientes son naturales, sin conservantes, ni colorantes ni refinados.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/alfajores11.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Tortas, alfajores y snacks</h5>
+                            <p>Prueba todas nuestras delicias veganas en cualquiera de sus formas, te encantaran!.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/guada.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Todo cocinado desde cero</h5>
+                            <p>Realizados cada uno de nuestros productos, con todo el amor y el sabor, como en casa.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
         <section class="productos">
             <h2>NUESTROS PRODUCTOS</h2>
@@ -113,10 +154,14 @@
                 <h3>Direccion</h3>
                 <a href="./pages/contactos.html">Carrer Angel Guimera 93, LHospitalet de Llobregat</a>
             </div>
-            <div>
+            <div class="logofooter animate__animated animate__rotateIn">
                 <a href="./index.html"><img src="./img/UPI-logo-72dpi (1).png" alt="logo upi" class="logos"></a>
             </div>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

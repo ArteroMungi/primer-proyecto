@@ -85,46 +85,22 @@ header nav ul li a:hover{
     transform: scale(1.3);
 }
 /*--------------main----------*/
-
-.hero{
-    text-align: center;
-    background-image: url(../img/tortascuadradoooo.jpg);
+.carousel-inner img{
     width: 100%;
     height: 85vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 3px 3px 3px rgba(9,128,78,0.63);
+    object-fit: cover;
 }
-.hero h1{
-    color: beige;
-    font-size: 40px;
-    font-weight: 100 ;
+.carousel-inner h5{
+    font-size: 50px;
+    color: #c6e6de;
 }
-.hero h2{
-    color: beige;
-    font-size: 30px;
+.carousel-inner p{
+    font-size: 25px;
 }
-.hero a{
-    text-decoration: none;
-    color:blanchedalmond;
-    background-color:#268671;
-    padding: 10px;
-    border-radius: 5px;
+.carousel-caption{
+    background-color: #07362a3f;
+    border-radius: 10px;
 }
-.hero a:hover{
-    background-color: #0a5c4a;
-    color: #a1e6d5;
-    transform: scale(1);
-    font-weight: 600;
-    font-size: 18px;
-}
-
 .productos h2{
     text-align: center;
     color: #268671;
@@ -132,10 +108,9 @@ header nav ul li a:hover{
     background-image: url(../img/just-waves.webp);
     padding: 15px;
     margin-top: 10px;
-}   
-
+}
 .productos .productos-contenedor{
-    background-color: #044637;
+    background-color: #c6e7df;
     margin-top: 10px;
     margin-bottom: 10px;
     display: grid;
@@ -171,8 +146,7 @@ header nav ul li a:hover{
     width: 100%;
     height: 100%; 
     object-fit: cover;
-    border: 2px solid #268671;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 8px -1px 32px -9px rgba(139,199,192,1);
     -webkit-box-shadow: 8px -1px 32px -9px rgba(139,199,192,1);
     -moz-box-shadow: 8px -1px 32px -9px rgba(139,199,192,1);
@@ -180,11 +154,14 @@ header nav ul li a:hover{
 .productos-contenedor div h3{
     position: absolute;
     top: 0;
-    background-color: #26867160;
+    background-color: #26867138;
     color: aliceblue;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
+}
+.productos-contenedor h3 :hover{
+    transform: scale(1.5);
 }
 
 .envios h2{
@@ -196,7 +173,7 @@ header nav ul li a:hover{
     margin-bottom: 10px;
 }
 .envios .envios-container{
-    background-color: #044637;
+    background-color:#bcdccc;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -208,7 +185,7 @@ header nav ul li a:hover{
 }
 .envios .envios-container div{
     font-size: 30px;
-    color: #d8d8d8;
+    color:#044637;
     width: 500px;
 }
 .envios .envios-container div ul{
@@ -218,8 +195,6 @@ header nav ul li a:hover{
     text-decoration: none;
     color: #36b877;
 }
-
-
 
 /*------FOOTER------*/
 footer section{
@@ -234,6 +209,9 @@ footer section{
     width: 150px;
     height: 150px;
 }
+.logofooter :hover{
+    transform: scale(1.1)
+}
 footer a{
     text-decoration: none;
     color:antiquewhite;
@@ -241,6 +219,10 @@ footer a{
 
 /*---------- PAGINA PRODUCTOS--------*/
 
+header nav ul{
+    margin: 0px;
+    padding: 0px;
+}
 .titulo-productos{
     text-align: center;
     color: #268671;
@@ -248,56 +230,47 @@ footer a{
     background-image: url(../img/just-waves.webp);
     padding: 15px;
 }
-.productos-productos-contenedor{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 700px 700px 700px 700px;
-    justify-content: space-around;
-    margin-top: 20px;  
-    gap: 20px;  
+.titulo-productos h1{
+    margin: 0px;
 }
-.productos-productos-contenedor div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.card-group{
+    font-family:'Nunito Sans', sans-serif ;
 }
-.productos-productos-contenedor div{
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    position: relative;
-    margin: 10px;
-    box-shadow: 10px 10px 30px -2px rgba(8,84,66,0.58);
--webkit-box-shadow: 10px 10px 30px -2px rgba(8,84,66,0.58);
--moz-box-shadow: 10px 10px 30px -2px rgba(8,84,66,0.58);
+.card-group div h5{
+    color: #044637;
 }
-.productos-productos-contenedor div h2{
-    width: 100%;
-    color: white;
-    font-size: 30px;
-    position: absolute;
-    top: 0px;
-    background-color: #0446376b;
+.card-group div a{
+    background-color: #29c09d;
+    color: #eeeeee;
 }
-.productos-productos-contenedor div p{
-    position: absolute;
-    bottom: 10px;
-    background-color: #0446376b;
-    color: white;
-    padding: 5px;
+footer h2{
+    margin: 0px;
+    font-size: 12px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+footer h3{
+    margin: 0px;
+    font-size: 12px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+footer a{
+    margin: 0px;
+    font-size: 12px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+footer p{
+    margin: 0px;
+    font-size: 12px;
+        font-family: 'Nunito Sans', sans-serif;
 }
 
 /*-------------PAGINA GALERIA----------*/
 .titulo-galeria{
     text-align: center;
     color: #268671;
-    font-size: 40px;
+    font-size: 30px;
     background-image: url(../img/just-waves.webp);
     padding: 15px;
-    margin-bottom: 10px;
 }
 .imagenes-galeria{
     display: grid;
@@ -309,6 +282,9 @@ footer a{
     height: 100%;
     object-fit:cover;
     padding: 10px;
+}
+.imagenes-galeria :hover{
+    transform: scale(1.04);
 }
 .img1{
     grid-column: 1/4;
@@ -331,14 +307,13 @@ footer a{
     color: #268671;
     font-size: 40px;
     padding: 15px;
-    margin-bottom: 10px;
+    background-color: rgb(255, 240, 242);
 }
 .sobremi{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-image: url(../img/just-waves.webp);
-    text-align: center;
 }
 .sobremi img{
     width: 450px;
@@ -350,6 +325,7 @@ footer a{
     color: #0a5c4a;
     width: 700px;
     margin: 10px;
+    font-family:'Nunito Sans', sans-serif ;
 }
 
 /*-------PAGINA CONTACTOS---------*/
@@ -364,11 +340,11 @@ footer a{
     height: 500px;
     width: 100%;
 }
+
 .contacto-contenedor{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    text-align: center;
     padding: 10px;
     color: #044637;
     background-image: url(../img/just-waves.webp);
@@ -376,8 +352,11 @@ footer a{
 .contacto-contenedor h2{
     padding: 10px;
 }
-.envios2{
-    width: 300px;
+.contacto-contenedor p{
+    margin-bottom: 10px;
+}
+.form {
+    text-align: center;
 }
 .form form div input{
     width: 100%;
@@ -385,7 +364,21 @@ footer a{
 .form form div textarea{
     width: 100%;
 }
-
+.form .reset input{
+    background-color: #044637;
+    border: wheat 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100px;
+    color:#c6e6de;
+}
+.form .reset :hover{
+    transform: scale(1.1);
+}
+.contacto-contenedor a{
+    text-decoration: none;
+    color: rgb(202, 95, 114);
+}
 /*--------media screen----------*/
 @media screen and (max-width:1000px) {
     .productos h2{
@@ -430,6 +423,10 @@ footer a{
         grid-column: 2/3;
         grid-row: 10/11;
     }
+    .contacto-contenedor{
+        flex-direction: column;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 830px) {
     header nav ul li a{
@@ -468,7 +465,7 @@ footer a{
     }
     .envios .envios-container div{
         font-size: 20px;
-        color: #d8d8d8;
+        color:#044637;
         width: 500px;
         text-align: center;
     }
@@ -479,26 +476,23 @@ footer a{
         background-image: url(../img/just-waves.webp);
         padding: 15px;
     }
-    .productos-productos-contenedor{
-        grid-template-rows: 500px 500px 500px 500px;
-    }
-    .productos-productos-contenedor div h2{
-        font-size: 20px;
-    }
     .titulo-sobremi{
         font-size: 25px;
         padding: 10px;
         margin-bottom: 0px;
     }
+    .sobremi{
+        flex-direction: column;
+        text-align: center;
+    }
     .sobremi img{
         width: 450px;
-        height: 500px;
-        margin: 10px;
+        height: 550px;
+        object-fit: cover;
+        margin: 10px
     }
     .sobremi p{
         font-size: 15px;
-        color: #0a5c4a;
-        width: 700px;
     }
     .contacto-titulo{
         font-size: 25px;
@@ -522,9 +516,6 @@ footer a{
         width: 20px;
         height: 20px;
     }   
-    .productos-productos-contenedor div h2{
-        font-size: 20px;
-    }
     .titulo-galeria{
         font-size: 30px;
     }
@@ -533,18 +524,7 @@ footer a{
         padding: 10px;
         margin-bottom: 0px;
     }
-    .sobremi{
-        flex-direction: column;
-    }
-    .sobremi img{
-        width: 450px;
-        height: 550px;
-        object-fit: cover;
-    }
-    .sobremi p{
-        font-size: 15px;
-        width: 500px;
-    }
+    
 }
 @media screen and (max-width: 580px){
     header{
@@ -620,16 +600,6 @@ footer a{
         font-size: 20px;
         padding: 10px;
     }
-    .productos-productos-contenedor div{
-        margin: 5px;
-        box-shadow: none;
-    }
-    .productos-productos-contenedor div h2{
-        font-size: 20px;
-    }
-    .productos-productos-contenedor div p{
-        padding: 5px;
-    }
     .titulo-galeria{
         font-size: 30px;
     }
@@ -666,11 +636,6 @@ footer a{
     .sobremi img{
         width: 200px;
         height: 250px;
-    }
-    .sobremi p{
-        font-size: 12px;
-        width: 100%;
-        margin: 15px;
     }
     footer section{
         display: flex;
