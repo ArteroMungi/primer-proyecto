@@ -24,7 +24,7 @@ header nav {
     font-family:'Nunito Sans', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 header nav ul{
     font-family:'Nunito Sans', sans-serif;
@@ -246,9 +246,9 @@ header nav ul{
     color: #044637;
 }
 .card-group .card{
-    box-shadow: 10px 10px 5px 0px rgba(247,220,220,0.75);
--webkit-box-shadow: 10px 10px 5px 0px rgba(247,220,220,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(247,220,220,0.75);
+    box-shadow: 10px 15px 20px 0px rgba(237,199,229,0.75);
+    -webkit-box-shadow: 10px 15px 20px 0px rgba(237,199,229,0.75);
+    -moz-box-shadow: 10px 15px 20px 0px rgba(237,199,229,0.75);
 }
 .card-group .card:hover{
     transform: scale(1.05);
@@ -491,6 +491,9 @@ footer p{
         background-image: url(../img/just-waves.webp);
         padding: 15px;
     }
+    .card-group{
+        flex-direction: column;
+    }
     .titulo-sobremi{
         font-size: 25px;
         padding: 10px;
@@ -600,6 +603,7 @@ footer p{
         "grid3"
         "grid4"
         "grid5";
+        background-color: #b9e6dc;
     }
     .productos-productos-contenedor{
         grid-template-columns: 100%;
