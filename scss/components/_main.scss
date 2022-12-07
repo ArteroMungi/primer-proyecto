@@ -1,0 +1,345 @@
+@import "../base/variables";
+/*----main index-----*/
+section h1{
+    @extend %titulo;
+}
+section{
+    #carouselExampleCaptions{
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    width: 100%;
+                    height: 75vh;
+                    object-fit: cover;
+                }
+                .carousel-caption{
+                    background-color: nth($colores,9);
+                    border-radius: 10px;
+                    h5{
+                        font-size: 50px;
+                        color:nth($colores,5);
+                    }
+                    p{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+.productos{
+    h2{
+        @extend %titulo;
+    }
+    .productos-contenedor{
+        background-color: nth($colores,5);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 350px 350px;
+        grid-template-areas: 
+        "grid1 grid1 grid2"
+        "grid3 grid5 grid4";
+        .productos-grid1{
+            grid-area: grid1;
+            position: relative;
+            margin:5px;
+            &:hover{
+                transform: scale(1.01);
+            }
+            a{
+                h3{
+                    @extend %gridh3;
+                }
+                img{
+                    @extend %gridimg;
+                }
+            }
+        }
+        .productos-grid2{
+            grid-area: grid2;
+            position: relative;
+            margin:5px;
+            &:hover{
+                transform: scale(1.01);
+            }
+            a{
+                    text-decoration: none;
+                h3{
+                    @extend %gridh3;
+                }
+                img{
+                    @extend %gridimg
+                }
+            }
+        }
+        .productos-grid3{
+            grid-area: grid3;
+            position: relative;
+            margin:5px;
+            &:hover{
+                transform: scale(1.01);
+            }
+            a{
+                text-decoration: none;
+                h3{
+                    @extend %gridh3;
+                }
+                img{
+                    @extend %gridimg;
+                }
+            }
+        }
+        .productos-grid4{
+            grid-area: grid4;
+            position: relative;
+            margin:5px;
+            &:hover{
+                transform: scale(1.01);
+            }
+            a{
+                text-decoration: none;
+                h3{
+                    @extend %gridh3;
+                }
+                img{
+                    @extend %gridimg;
+                }
+            }
+        }
+        .productos-grid5{
+            grid-area: grid5;
+            position: relative;
+            margin:5px;
+            &:hover{
+                transform: scale(1.01);
+            }
+            a{
+                text-decoration: none;
+                h3{
+                    @extend %gridh3;
+                }
+                img{
+                    @extend %gridimg;
+                }
+            }
+        }
+    }
+}
+.envios{
+    h2{
+        @extend %titulo;
+    }
+    .envios-container{
+        background: linear-gradient(90deg,nth($colores,7) 0%, nth($colores,2) 52%,nth($colores,1) 100%);
+        @include flex (flex, space-evenly, center);
+        margin-bottom: 10px;
+        div{
+            font-size: 30px;
+            color:nth($colores,1);
+            width: 500px;
+            ul{
+                list-style: none;
+            }
+            p{
+                a{
+                    text-decoration: none;
+                    color: nth($colores,2);
+                }
+            }
+        }
+        img{
+            width: 450px;
+            height: 600px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 10px 10px 48px -5px rgba(244,202,217,0.75);
+            -webkit-box-shadow: 10px 10px 48px -5px rgba(244,202,217,0.75);
+            -moz-box-shadow: 10px 10px 48px -5px rgba(244,202,217,0.75);
+        }
+    }
+}
+/*------main productos------*/
+section{
+    .titulo-productos{
+        @extend %titulo;
+    }
+}
+section{
+    .card-group{
+        font-family:'Nunito Sans', sans-serif;
+        .card{
+            box-shadow: 10px 15px 20px 0px nth($colores,7);
+            -webkit-box-shadow: 10px 15px 20px 0px nth($colores,7);
+            -moz-box-shadow: 10px 15px 20px 0px nth($colores,7);
+            &:hover{
+                transform: scale(1.05);
+            }
+            .card-body{
+                h5{
+                    color: nth($colores,1);
+                }
+            }
+            .card-footer{
+                a{
+                    background-color: nth($colores,4);
+                    color: nth($colores,3);
+                    &:hover{
+                        transform: scale(1.05);
+                        color: nth($colores,2)
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-----main galeria----*/
+section{
+    margin-bottom: 8px;
+    .titulo-galeria{
+        @extend %titulo;
+        font-weight: 100;
+    }
+}
+.imagenes-galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(10,700px);
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        padding: 10px;
+        border-radius: 30px;
+        &:hover{
+            transform: scale(1.04);
+        }
+    }
+    .img1{
+        grid-column: 1/4;
+    }
+    .img2{
+        grid-row: 3/5;
+    }
+    .img3{
+        grid-column: 2/4;
+        grid-row: 5/7;
+    }
+    .img4{
+        grid-column: 2/3;
+        grid-row: 8/10;
+    }
+}
+/*------main sobremi------*/
+.titulo-sobremi{
+    @extend %titulo;
+    font-weight: 100;
+}
+.sobremi{
+    @include flex (flex, space-evenly, center);
+    background-image: $imgfondo;
+    div{
+        p{
+            font-size: 20px;
+            color:nth($colores,1);
+            width: 700px;
+            margin: 10px;
+            font-family:'Nunito Sans', sans-serif;
+            &::first-letter{
+                color: nth($colores,8) ;
+                font-size: 25px;
+            }
+        }
+    }
+    img{
+        width: 450px;
+        height: 600px;
+        margin: 10px;
+        border: 2px nth($colores,8) solid;
+        border-radius: 10px;
+    }
+}
+/*-------main contactos----*/ 
+section{
+    .contacto-titulo{
+        @extend %titulo;
+    }
+}
+iframe{
+    height: 75vh;
+    width: 100%;
+}
+.contacto-contenedor{
+    flex-wrap: wrap;
+    @include flex (flex, space-evenly, center);
+    padding: 10px;
+    color: nth($colores,2);
+    background-image: $imgfondo;
+    div{
+        .contacto{
+            h2{
+                padding: 10px;
+            }
+            p{
+                margin-bottom: 10px;
+                a{
+                    text-decoration: none;
+                    color: nth($colores,8);
+                }
+            }
+        }
+        .info{
+            h2{
+                padding: 10px;
+            }
+            p{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    div{
+        .envios2{
+            h2{
+                padding: 10px;
+            }
+            p{
+                margin-bottom: 10px;
+                a{
+                    text-decoration: none;
+                    color: nth($colores,8);
+                }
+            }
+        }
+        .form{
+            h2{
+                padding: 10px;
+            }
+            div{
+                text-align: center;
+                div{
+                    input{
+                        width: 100%;
+                    }
+                }
+                div{
+                    textarea{
+                        width: 100%;
+                    }
+                }
+                .btn{
+                    background-color:nth($colores,1);
+                    border: nth($colores, 7) 2px solid;
+                    border-radius: 10px;
+                    padding: 5px;
+                    width: 100px;
+                    color:nth($colores,5);
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

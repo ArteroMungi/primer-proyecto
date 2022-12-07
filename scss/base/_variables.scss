@@ -1,0 +1,52 @@
+$imgfondo: url(../img/just-waves.webp);
+
+$colores:
+#0a5c4a,
+#268671,
+#d8d8d8,
+#4dbea6,
+#c6e6de,
+#26867138,
+#f4cad9,
+#ca5f72,
+#07362a3f;
+
+%titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: nth($colores,2);
+    font-size: 40px;
+    background-image: $imgfondo;
+    padding: 8px;
+    margin-top: 10px;
+    height: 8vh;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+%gridh3{
+    position: absolute;
+    top:0;
+    background-color:nth($colores,6);
+    color: nth($colores,5);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+%gridimg{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 8px -1px 32px -9px nth($colores,2);
+    -webkit-box-shadow: 8px -1px 32px -9px nth($colores,2);
+    -moz-box-shadow: 8px -1px 32px -9px nth($colores,2);
+}
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
