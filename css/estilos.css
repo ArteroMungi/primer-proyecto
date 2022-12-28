@@ -48,48 +48,6 @@ section h1, .productos h2, .envios h2, section .titulo-productos, section .titul
   -webkit-box-shadow: 8px -1px 32px -9px #268671;
   -moz-box-shadow: 8px -1px 32px -9px #268671; }
 
-section h1, .productos h2, .envios h2, section .titulo-productos, section .titulo-galeria, .titulo-sobremi, section .titulo-contactos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #268671;
-  font-size: 40px;
-  background-image: url(../img/just-waves.webp);
-  padding: 8px;
-  margin-top: 10px;
-  height: 8vh;
-  font-family: 'Nunito Sans', sans-serif; }
-
-.productos .productos-contenedor .productos-grid1, .productos .productos-contenedor .productos-grid2, .productos .productos-contenedor .productos-grid3, .productos .productos-contenedor .productos-grid4, .productos .productos-contenedor .productos-grid5 {
-  position: relative;
-  margin: 8px;
-  border-radius: 5px;
-  transition: ease-in-out 1s; }
-  .productos .productos-contenedor .productos-grid1:hover, .productos .productos-contenedor .productos-grid2:hover, .productos .productos-contenedor .productos-grid3:hover, .productos .productos-contenedor .productos-grid4:hover, .productos .productos-contenedor .productos-grid5:hover {
-    transform: scale(0.97);
-    box-shadow: -3px 5px 14px 11px rgba(38, 134, 113, 0.75);
-    -webkit-box-shadow: -3px 5px 14px 11px rgba(38, 134, 113, 0.75);
-    -moz-box-shadow: -3px 5px 14px 11px rgba(38, 134, 113, 0.75); }
-
-.productos .productos-contenedor .productos-grid1 a h3, .productos .productos-contenedor .productos-grid2 a h3, .productos .productos-contenedor .productos-grid3 a h3, .productos .productos-contenedor .productos-grid4 a h3, .productos .productos-contenedor .productos-grid5 a h3 {
-  position: absolute;
-  top: 0;
-  background-color: #26867138;
-  color: #c6e6de;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px; }
-
-.productos .productos-contenedor .productos-grid1 a img, .productos .productos-contenedor .productos-grid2 a img, .productos .productos-contenedor .productos-grid3 a img, .productos .productos-contenedor .productos-grid4 a img, .productos .productos-contenedor .productos-grid5 a img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 5px;
-  box-shadow: 8px -1px 32px -9px #268671;
-  -webkit-box-shadow: 8px -1px 32px -9px #268671;
-  -moz-box-shadow: 8px -1px 32px -9px #268671; }
-
 header {
   font-family: 'Nunito Sans', sans-serif;
   background: #0a5c4a;
@@ -157,48 +115,6 @@ header {
       height: 20px; }
       header .red a img:hover {
         transform: scale(1.3); }
-
-section h1, .productos h2, .envios h2, section .titulo-productos, section .titulo-galeria, .titulo-sobremi, section .titulo-contactos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #268671;
-  font-size: 40px;
-  background-image: url(../img/just-waves.webp);
-  padding: 8px;
-  margin-top: 10px;
-  height: 8vh;
-  font-family: 'Nunito Sans', sans-serif; }
-
-.productos .productos-contenedor .productos-grid1, .productos .productos-contenedor .productos-grid2, .productos .productos-contenedor .productos-grid3, .productos .productos-contenedor .productos-grid4, .productos .productos-contenedor .productos-grid5 {
-  position: relative;
-  margin: 8px;
-  border-radius: 5px;
-  transition: ease-in-out 1s; }
-  .productos .productos-contenedor .productos-grid1:hover, .productos .productos-contenedor .productos-grid2:hover, .productos .productos-contenedor .productos-grid3:hover, .productos .productos-contenedor .productos-grid4:hover, .productos .productos-contenedor .productos-grid5:hover {
-    transform: scale(0.97);
-    box-shadow: -3px 5px 14px 11px rgba(38, 134, 113, 0.75);
-    -webkit-box-shadow: -3px 5px 14px 11px rgba(38, 134, 113, 0.75);
-    -moz-box-shadow: -3px 5px 14px 11px rgba(38, 134, 113, 0.75); }
-
-.productos .productos-contenedor .productos-grid1 a h3, .productos .productos-contenedor .productos-grid2 a h3, .productos .productos-contenedor .productos-grid3 a h3, .productos .productos-contenedor .productos-grid4 a h3, .productos .productos-contenedor .productos-grid5 a h3 {
-  position: absolute;
-  top: 0;
-  background-color: #26867138;
-  color: #c6e6de;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px; }
-
-.productos .productos-contenedor .productos-grid1 a img, .productos .productos-contenedor .productos-grid2 a img, .productos .productos-contenedor .productos-grid3 a img, .productos .productos-contenedor .productos-grid4 a img, .productos .productos-contenedor .productos-grid5 a img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 5px;
-  box-shadow: 8px -1px 32px -9px #268671;
-  -webkit-box-shadow: 8px -1px 32px -9px #268671;
-  -moz-box-shadow: 8px -1px 32px -9px #268671; }
 
 /*----main index-----*/
 section #carouselExampleCaptions .carousel-inner .carousel-item img {
@@ -404,48 +320,6 @@ iframe {
       color: #c6e6de; }
       .contacto-contenedor div .form div .btn:hover {
         transform: scale(1.1); }
-
-section h1, .productos h2, .envios h2, section .titulo-productos, section .titulo-galeria, .titulo-sobremi, section .titulo-contactos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #268671;
-  font-size: 40px;
-  background-image: url(../img/just-waves.webp);
-  padding: 8px;
-  margin-top: 10px;
-  height: 8vh;
-  font-family: 'Nunito Sans', sans-serif; }
-
-.productos .productos-contenedor .productos-grid1, .productos .productos-contenedor .productos-grid2, .productos .productos-contenedor .productos-grid3, .productos .productos-contenedor .productos-grid4, .productos .productos-contenedor .productos-grid5 {
-  position: relative;
-  margin: 8px;
-  border-radius: 5px;
-  transition: ease-in-out 1s; }
-  .productos .productos-contenedor .productos-grid1:hover, .productos .productos-contenedor .productos-grid2:hover, .productos .productos-contenedor .productos-grid3:hover, .productos .productos-contenedor .productos-grid4:hover, .productos .productos-contenedor .productos-grid5:hover {
-    transform: scale(0.97);
-    box-shadow: -3px 5px 14px 11px rgba(38, 134, 113, 0.75);
-    -webkit-box-shadow: -3px 5px 14px 11px rgba(38, 134, 113, 0.75);
-    -moz-box-shadow: -3px 5px 14px 11px rgba(38, 134, 113, 0.75); }
-
-.productos .productos-contenedor .productos-grid1 a h3, .productos .productos-contenedor .productos-grid2 a h3, .productos .productos-contenedor .productos-grid3 a h3, .productos .productos-contenedor .productos-grid4 a h3, .productos .productos-contenedor .productos-grid5 a h3 {
-  position: absolute;
-  top: 0;
-  background-color: #26867138;
-  color: #c6e6de;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px; }
-
-.productos .productos-contenedor .productos-grid1 a img, .productos .productos-contenedor .productos-grid2 a img, .productos .productos-contenedor .productos-grid3 a img, .productos .productos-contenedor .productos-grid4 a img, .productos .productos-contenedor .productos-grid5 a img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 5px;
-  box-shadow: 8px -1px 32px -9px #268671;
-  -webkit-box-shadow: 8px -1px 32px -9px #268671;
-  -moz-box-shadow: 8px -1px 32px -9px #268671; }
 
 footer section {
   display: flex;
