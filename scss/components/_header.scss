@@ -12,7 +12,7 @@ header{
         img{
             width: 80px;
             height: 80px;  
-            transition: 0.1s; 
+            transition: 2s; 
             &:hover{
                 transform: scale(1.2);
             }
@@ -33,6 +33,7 @@ header{
                 text-align: center; 
                 width: auto;
                 margin: 15px;
+                transition: 1s;
                 &:hover{
                     transform: scale(1.2);
                 }
@@ -51,9 +52,6 @@ header{
                         border-radius: 4px;
                     }
                 }
-            }
-            .haz-pedido{
-                border: nth($colores,3) solid 1px;
             }
         }
     }

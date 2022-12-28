@@ -6,19 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <title>UPI BAKERY | Productos</title>
-    <meta name="description" content="Prueba nuestros productos 100% veganos, te sorprenderán los diferentes sabores que logramos con las mejores combinaciones utilizando alimentos sanos, sin procesar ni refinar. Posibilidad sin gluten">
-    <meta name="keywords" content="cheescake, tarta de queso, carrot cake, cookies, mantequilla de mani, tortas, torta de chocolate, chocolate, alfajores, alfajores de maicena, avellana, alimentos proteicos, comida sana, dulces">
+    <meta name="description"
+        content="Prueba nuestros productos 100% veganos, te sorprenderán los diferentes sabores que logramos con las mejores combinaciones utilizando alimentos sanos, sin procesar ni refinar. Posibilidad sin gluten">
+    <meta name="keywords"
+        content="cheescake, tarta de queso, carrot cake, cookies, mantequilla de mani, tortas, torta de chocolate, chocolate, alfajores, alfajores de maicena, avellana, alimentos proteicos, comida sana, dulces">
     <meta property="og:type" content="Web site">
     <meta property="og:title" content="Upi Bakery | Pasteleria Artesanal Vegana">
-    <meta property="og:description" content="Pastelería Artesanal Vegana con productos 100% naturales, sin harinas ni azucares refinados y sin colorantes artificiales. Realizamos envíos a toda la ciudad de Barcelona y alrededores">
+    <meta property="og:description"
+        content="Pastelería Artesanal Vegana con productos 100% naturales, sin harinas ni azucares refinados y sin colorantes artificiales. Realizamos envíos a toda la ciudad de Barcelona y alrededores">
+    <meta property="og:url" content="https://upibakery.netlify.app/">
+    <meta property="og:image" content="https://upibakery.netlify.app/img/UPI-logo-72dpi%20(1).png">
 </head>
 <body>
     <header>
-        <div class="logo">
+        <div class="logo animate__animated animate__rotateIn">
             <a href="../index.html"><img src="../img/UPI-logo-72dpi (1).png" alt="Logo upi"></a>
         </div>
         <nav>
@@ -27,7 +33,6 @@
                 <li><a href="./galeria.html">GALERIA</a></li>
                 <li><a href="./sobremi.html">SOBRE MI</a></li>
                 <li><a href="./contactos.html">CONTACTO</a></li>
-                <li class="haz-pedido animate__animated animate__shakeY"><a href="./contactos.html">HAZ TU PEDIDO</a></li>
             </ul>
         </nav>
         <div class="red">
@@ -39,99 +44,111 @@
     </header>
     <main>
         <section>
-            <div>
                 <h1 class="titulo-productos">PRODUCTOS 100% VEGANOS</h1>
-            </div>
         </section>
         <section>
-            <div class="card-group text-center">
-                <div class="card my-3 mx-4">
-                    <img src="../img/tartas.jpg" class="card-img-top" alt="tarta de queso">
-                    <div class="card-body">
-                        <h5 class="card-title">Cheescake</h5>
-                        <p class="card-text">Prueba nuestra espectacular tarta de queso vegano, una reinvención
-                            de un clásico.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="./contactos.html" class="btn">Comprar</a>
-                    </div>
-                </div>
-                <div class="card my-3 mx-4">
-                    <img src="../img/alfajores.jpg" class="card-img-top" alt="alfajores de maicena">
-                    <div class="card-body">
-                        <h5 class="card-title">Alfajores de Maicena</h5>
-                        <p class="card-text">Alfajores de maicena y lima, rellenos con una crema de dátiles,
-                            simplemente delicioso.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="./contactos.html" class="btn">Comprar</a>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3 mx-3 mt-2 mb-4  text-center">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/tartas.jpg" class="card-img-top" alt="tarta de queso">
+                        <div class="card-body">
+                            <h5 class="card-title">Cheescake</h5>
+                            <p class="card-text">Prueba nuestra espectacular tarta de queso vegano, una reinvención
+                                de un clásico.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="./contactos.html" class="btn">COMPRAR</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card my-3 mx-4">
-                    <img src="../img/proteinas.jpg" class="card-img-top" alt="bolitas proteicas">
-                    <div class="card-body">
-                        <h5 class="card-title">Bolitas Proteicas</h5>
-                        <p class="card-text">El snack perfecto con mantequilla de maní y chocolate, puro sabor y
-                            energía</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="./contactos.html" class="btn">Comprar</a>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/alfajores.jpg" class="card-img-top" alt="alfajores de maicena">
+                        <div class="card-body">
+                            <h5 class="card-title">Alfajores de Maicena</h5>
+                            <p class="card-text">Alfajores de maicena y lima, rellenos con una crema de dátiles,
+                                simplemente delicioso.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="./contactos.html" class="btn">COMPRAR</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card my-3 mx-4">
-                    <img src="../img/carrot3.jpg" class="card-img-top" alt="tarta de zanahoria">
-                    <div class="card-body">
-                        <h5 class="card-title">Carrot Cake</h5>
-                        <p class="card-text">La torta de zanahoria de siempre, realizada con crema vegana, una
-                            explosión de sabor.</p>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/proteinas.jpg" class="card-img-top" alt="bolitas proteicas">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolitas Proteicas</h5>
+                            <p class="card-text">El snack perfecto con mantequilla de maní y chocolate, puro sabor y
+                                energía</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="./contactos.html" class="btn">COMPRAR</a>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <a href="./contactos.html" class="btn">Comprar</a>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/carrot3.jpg" class="card-img-top" alt="tarta de zanahoria">
+                        <div class="card-body">
+                            <h5 class="card-title">Carrot Cake</h5>
+                            <p class="card-text">La torta de zanahoria de siempre, realizada con crema vegana, una
+                                explosión de sabor.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="./contactos.html" class="btn">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/matilda.jpg" class="card-img-top" alt="tarta de chocolate">
+                        <div class="card-body">
+                            <h5 class="card-title">Matilda Chocolate</h5>
+                            <p class="card-text">Recuerda a Bruce de Matilda? pues si, tambien era vegano cuando comía esta delicia de chocolate.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="./contactos.html" class="btn">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/alfajoresAvellana.jpg" class="card-img-top" alt="alfajores de avellana">
+                        <div class="card-body">
+                            <h5 class="card-title">Alfajores de Avellana</h5>
+                            <p class="card-text">Alfajores de avellanas, rellenos de chocolate con un toque de chile picante.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="./contactos.html" class="btn">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/cookies2.jpg" class="card-img-top" alt="cookies">
+                        <div class="card-body">
+                            <h5 class="card-title">Cookies</h5>
+                            <p class="card-text">Reinvencion de las cookies de siempre, realizadas con mantequilla de mani y chocolate</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="./contactos.html" class="btn">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/singluten.jpg" class="card-img-top" alt="tartas varias">
+                        <div class="card-body">
+                            <h5 class="card-title">Sin Gluten</h5>
+                            <p class="card-text">Todos nuestros productos tienen la opcion sin gluten para todos poder disfrutarlo.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="./contactos.html" class="btn">COMPRAR</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card-group text-center">
-                <div class="card my-3 mx-4">
-                    <img src="../img/matilda.jpg" class="card-img-top" alt="tarta de chocolate">
-                    <div class="card-body">
-                        <h5 class="card-title">Matilda Chocolate</h5>
-                        <p class="card-text">Recuerda a Bruce de Matilda? pues si, tambien era vegano cuando comía esta delicia de chocolate.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="./contactos.html" class="btn">Comprar</a>
-                    </div>
-                </div>
-                <div class="card my-3 mx-4">
-                    <img src="../img/alfajoresAvellana.jpg" class="card-img-top" alt="alfajores de avellana">
-                    <div class="card-body">
-                        <h5 class="card-title">Alfajores de Avellana</h5>
-                        <p class="card-text">Alfajores de avellanas, rellenos de chocolate con un toque de chile picante.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="./contactos.html" class="btn">Comprar</a>
-                    </div>
-                </div>
-                <div class="card my-3 mx-4">
-                    <img src="../img/cookies2.jpg" class="card-img-top" alt="cookies">
-                    <div class="card-body">
-                        <h5 class="card-title">Cookies</h5>
-                        <p class="card-text">Reinvencion de las cookies de siempre, realizadas con mantequilla de mani y chocolate</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="./contactos.html" class="btn">Comprar</a>
-                    </div>
-                </div>
-                <div class="card my-3 mx-4">
-                    <img src="../img/singluten.jpg" class="card-img-top" alt="tartas varias">
-                    <div class="card-body">
-                        <h5 class="card-title">Sin Gluten</h5>
-                        <p class="card-text">Todos nuestros productos tienen la opcion sin gluten para todos poder disfrutarlo.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="./contactos.html" class="btn">Comprar</a>
-                    </div>
-                </div>
-            </div>     
         </section>
     </main>
     <footer>
@@ -165,4 +182,5 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

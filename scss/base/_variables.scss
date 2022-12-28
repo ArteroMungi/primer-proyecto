@@ -1,7 +1,7 @@
 $imgfondo: url(../img/just-waves.webp);
 
 $colores:
-#0a5c4a,
+rgb(10, 92, 74),
 #268671,
 #d8d8d8,
 #4dbea6,
@@ -25,6 +25,19 @@ $colores:
     font-family: 'Nunito Sans', sans-serif;
 }
 
+%gridcontainer{
+    position: relative;
+    margin:8px;
+    border-radius:5px ;
+    transition: ease-in-out 1s;
+    &:hover{
+        transform: scale(0.97);
+        box-shadow: -3px 5px 14px 11px rgba(38,134,113,0.75);
+        -webkit-box-shadow: -3px 5px 14px 11px rgba(38,134,113,0.75);
+        -moz-box-shadow: -3px 5px 14px 11px rgba(38,134,113,0.75);
+    }
+
+}
 %gridh3{
     position: absolute;
     top:0;

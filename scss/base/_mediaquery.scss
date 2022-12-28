@@ -2,23 +2,20 @@
 
 @media screen and (max-width:1150px){
     .sobremi img{
-        width: 300px;
-        height: 500px;
+        width: 500px;
+        height: 650px;
         margin: 10px;
     }
     .sobremi  div p{
-        font-size: 15px;
-        width: 300px;
-    }   
+        font-size: 18px;
+        width: 500px;
+    } 
 }
 
 @media screen and (max-width:1000px) {
     header nav ul li a{
         font-size: 12px;
         font-weight: 100;
-    }
-    section h1{
-        font-size: 35px;
     }
     .productos h2{
         font-size: 25px;
@@ -30,10 +27,9 @@
         font-size: 20px;
         width: 300px;
     } 
-    .titulo-sobremi{
-        font-size: 25px;
-        padding: 10px;
-        margin-bottom: 0px;
+    .envios .envios-container img{
+        width: 400px;
+        height: 500px;
     }
     .imagenes-galeria{
         grid-template-columns: 1fr 1fr;
@@ -81,6 +77,25 @@
         margin: 0px;
         padding: 0px;
     }
+    .sobremi{
+        flex-direction: column;
+        text-align: center;
+    }
+    .sobremi img{
+        width: 450px;
+        height: 550px;
+        object-fit: cover;
+        margin: 10px
+    }
+    .sobremi div{
+        width: 85%;
+    }
+    .sobremi div p{
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0px 10px 0px;
+    }
 }
 @media screen and (max-width: 740px) {
     header{
@@ -125,7 +140,7 @@
     section .titulo-productos{
         text-align: center;
         color:nth($colores,2);
-        font-size: 20px;
+        font-size: 30px;
         background-image: url(../img/just-waves.webp);
         padding: 15px;
     }
@@ -136,31 +151,17 @@
     section .card-group .card{
         width: 450px;
     }
-    .titulo-sobremi{
-        font-size: 25px;
+    section .titulo-sobremi{
+        font-size: 30px;
         padding: 10px;
         margin-bottom: 0px;
     }
-    .sobremi{
-        flex-direction: column;
-        text-align: center;
-    }
-    .sobremi img{
-        width: 450px;
-        height: 550px;
-        object-fit: cover;
-        margin: 10px
-    }
-    .sobremi div{
-        width: 85%;
-    }
-    .sobremi div p{
-        font-size: 15px;
-        width: 100%;
-    }
-    .contacto-titulo{
-        font-size: 25px;
+    section .titulo-contactos{
+        font-size: 30px;
         padding: 10px;
+    }
+    section .titulo-galeria{
+        font-size: 30px;
     }
 }
 @media screen and (max-width: 650px) {
@@ -182,9 +183,6 @@
     }   
     section #carouselExampleCaptions .carousel-inner .carousel-item img{
         height: 70vh;
-    }
-    section h1{
-        font-size: 25px;
     }
     section .titulo-galeria{
         font-size: 30px;
@@ -222,8 +220,8 @@
         padding: 1px;
     }
     header .logo img{
-        width: 50px;
-        height: 50px;  
+        width: 70px;
+        height: 70px;  
     }
     header .logo{
         @include flex (flex, center, center);
@@ -237,6 +235,9 @@
         justify-content: center;
         flex-direction: row;
         margin: 5px;        
+    }
+    section h1{
+        font-size: 25px;
     }
     .productos .productos-contenedor{
         background-color: nth($colores,1);
@@ -252,7 +253,7 @@
         background-color: nth($colores,5);
     }
     section .titulo-productos{
-        font-size: 20px;
+        font-size: 25px;
         padding: 10px;
     }
     section .card-group .card{
@@ -295,14 +296,17 @@
     .imagenes-galeria .img-none{
         display: none;
     }
-    .titulo-sobremi{
+    section .titulo-sobremi{
         font-size: 25px;
         padding: 10px;
         margin-bottom: 0px;
     }
     .sobremi img{
-        width: 200px;
-        height: 250px;
+        width: 300px;
+        height: 350px;
+    }
+    section .titulo-contactos{
+        font-size: 25px;
     }
     footer section{
         display: flex;
@@ -324,9 +328,11 @@
     section h1{
         font-size: 20px;
     }
-    section .titulo-productos{
-        font-size: 16px;
-        padding: 8px;
+    .productos h2{
+        font-size: 20px;
+    }
+    .envios h2{
+        font-size: 20px;
     }
     .imagenes-galeria img{
         padding: 3px;
@@ -340,15 +346,17 @@
         font-size: 16px;
         width: 90%;
     }
-    .contacto-titulo{
+    section .titulo-galeria{
+        font-size: 20px;
+    }
+    section .titulo-productos{
+        font-size: 20px;
+    }
+    section .titulo-sobremi{
+        font-size: 20px;
+    }
+    section .titulo-contactos{
         font-size: 20px;
         padding: 6px;
-    }
-}
-@media screen and (max-width: 380px){
-    .titulo-sobremi{
-        font-size: 20px;
-        padding: 8px;
-        margin-bottom: 0px;
     }
 }
